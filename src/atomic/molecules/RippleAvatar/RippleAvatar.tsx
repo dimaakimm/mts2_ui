@@ -8,7 +8,7 @@ export interface RippleAvatarProps {
 }
 
 const RippleAvatar: React.FC<RippleAvatarProps> = ({
-    updateInterval = 1000,
+    updateInterval = 250,
 }) => {
     const [ringCount, setRingCount] = useState<number>(3)
     useEffect(() => {
