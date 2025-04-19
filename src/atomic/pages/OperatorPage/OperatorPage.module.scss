@@ -47,5 +47,8 @@
   background-color: $white-color;
   color: $black-color;
   padding: 20px;
-  white-space: pre;
+  white-space: pre-wrap;      // переносит слова, но уважает \n
+
+  /* если бывают ОЧЕНЬ длинные слова/URL: */
+  overflow-wrap: anywhere;
 }
