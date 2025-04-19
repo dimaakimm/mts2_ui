@@ -3,6 +3,7 @@ import { hints, personalInfo } from '../../../mockedData/mockedData.ts'
 import Button from '../../atoms/Button/Button.tsx'
 import Typography from '../../atoms/Typography/Typography.tsx'
 import { useNavigate } from 'react-router-dom'
+import Hint from '../../atoms/Hint/Hint.tsx'
 
 const OperatorPage = () => {
     const navigate = useNavigate()
@@ -10,8 +11,8 @@ const OperatorPage = () => {
         <div className={styles.wrapper}>
             <div className={styles.left}>
                 <div className={styles.leftContent}>
-                    {hints.map((hint) => (
-                        <div className={styles.hint}>{hint.text}</div>
+                    {hints.map((hint, index) => (
+                        <Hint text={hint.text} type={hint.type} key={index} />
                     ))}
                 </div>
             </div>

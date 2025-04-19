@@ -27,7 +27,11 @@ export const personalInfo =
     'Кредитная карта МТС Деньги - нет\n' +
     'Виртуальная карта МТС Деньги - нет'
 
-export const hints = [
+export interface IHint {
+    text: string
+    type: 1 | 2 | 3
+}
+export const hints: IHint[] = [
     {
         type: 1,
         text: 'У клиента устаревший роутер — может потребоваться замена для скорости > 100 Мбит/с.',
