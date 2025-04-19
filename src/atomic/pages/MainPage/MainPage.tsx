@@ -1,6 +1,7 @@
 import styles from './MainPage.module.scss'
 import Button from '../../atoms/Button/Button.tsx'
 import { useNavigate } from 'react-router-dom'
+import Typography from '../../atoms/Typography/Typography.tsx'
 
 const MainPage = () => {
     const navigate = useNavigate()
@@ -8,10 +9,10 @@ const MainPage = () => {
         <div className={styles.wrapper}>
             <div className={styles.content}>
                 <Button onClick={() => navigate('/operator')}>
-                    ВОЙТИ КАК ОПЕРАТОР
+                    <Typography dType="r20">ВОЙТИ КАК ОПЕРАТОР</Typography>
                 </Button>
                 <Button onClick={() => navigate('/user')}>
-                    ВОЙТИ КАК ПОЛЬЗОВАТЕЛЬ
+                    <Typography dType="r20">ВОЙТИ КАК ПОЛЬЗОВАТЕЛЬ</Typography>
                 </Button>
             </div>
         </div>

@@ -12,20 +12,20 @@
 .leftContent{
   background-color: $light-blue-color;
   flex: 1;
-  padding: 70px 45px;
+  padding: 30px 45px;
   display: flex;
   flex-direction: column;
-  justify-content: end;
   gap: 20px;
   overflow-y: scroll;
 }
 .right{
   padding: 70px 26px;
-  min-width: 500px;
+  width: 40%;
   background-color: $light-gray-color;
   display: flex;
   flex-direction: column;
-  gap: 50px
+  gap: 50px;
+  max-height: 100vh;
 }
 .hint{
   padding: 20px;
@@ -47,8 +47,7 @@
   background-color: $white-color;
   color: $black-color;
   padding: 20px;
-  white-space: pre-wrap;      // переносит слова, но уважает \n
-
-  /* если бывают ОЧЕНЬ длинные слова/URL: */
+  white-space: pre-wrap;
+  overflow-y: scroll;
   overflow-wrap: anywhere;
 }
