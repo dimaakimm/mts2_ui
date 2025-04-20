@@ -7,6 +7,7 @@ import Hint from '../../atoms/Hint/Hint.tsx'
 
 const OperatorPage = () => {
     const navigate = useNavigate()
+    //TODO: при завершении звонка пересылать '/results'
     return (
         <div className={styles.wrapper}>
             <div className={styles.left}>
