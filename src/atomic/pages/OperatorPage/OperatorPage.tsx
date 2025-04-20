@@ -22,8 +22,8 @@ const OperatorPage = () => {
                 <div className={styles.info}>
                     <Typography dType="r20">{personalInfo}</Typography>
                 </div>
-                <Button onClick={() => navigate('/')}>
-                    <Typography dType="r24">На главную</Typography>
+                <Button onClick={() => navigate('/results')}>
+                    <Typography dType="r24">К результатам</Typography>
                 </Button>
             </div>
         </div>
